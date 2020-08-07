@@ -208,7 +208,7 @@ app.get(
     var email = req.user.emails[0].value;
     var ra = email.substring(0, email.lastIndexOf("@"));
     var dominio = email.substring(email.lastIndexOf("@") + 1);
-    if (nconf.get("ralist").indexOf(ra) == -1 || dominio != "uepg.br") {
+    if (nconf.get("ralist").indexOf(ra) == -1 || nconf.get(`domainlist`).indexOf(dominio) == -1) {
       res.redirect("/deny");
       return;
     }
@@ -374,7 +374,7 @@ app.get("/*", function (req, res) {
     var email = req.user.emails[0].value;
     var ra = email.substring(0, email.lastIndexOf("@"));
     var dominio = email.substring(email.lastIndexOf("@") + 1);
-    if (nconf.get(`ralist`).indexOf(ra) == -1 || dominio != "uepg.br") {
+    if (nconf.get(`ralist`).indexOf(ra) == -1 || nconf.get(`domainlist`).indexOf(dominio) == -1) {
       res.redirect("/deny");
     } else if (
       req.user &&
