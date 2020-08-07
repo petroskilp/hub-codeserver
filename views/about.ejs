@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+    <% include ./parts/head.ejs %>
+  <body class="subpage">
+    <% include ./parts/header.ejs %>
+
+    <!-- Three -->
+    <section id="three" class="wrapper">
+      <div class="inner">
+        <header class="align-center">
+          <h2>Sobre</h2>
+          <p>Professor: Luiz Pedro Petroski</p>
+        </header>
+        <div class="image right">
+          <img src="static/images/code-server.png" alt="VSCODE server" />
+        </div>
+        <div class="container 100%">
+          <p>
+            Este ambiente utiliza a aplicação
+            <a href="https://github.com/cdr/code-server" target="_blank"
+              >code-server</a
+            >
+            para permitir um ambiente de trabalho online com acesso por meio do
+            browser.
+          </p>
+          <ul>
+            <li>
+              Codificação em qualquer lugar
+              <ul>
+                <li>Independente de sistema operacional</li>
+                <li>Independente de Hardware</li>
+                <li>Acesso ao terminal</li>
+                <li>
+                  Dependências Java Instaladas
+                  <ul>
+                    <li>openjdk version "11.0.8" 2020-07-14</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="image right">
+          <img src="static/images/docker.png" alt="Pic 02" />
+        </div>
+        <p>
+          Ao realizar o login, é criado um container com mapeamento do diretório
+          home do usuário, permitindo a persistência de disco. Cada login,
+          iniciará em um novo container, permitindo o isolamento de ambientes.
+        </p>
+        <p>
+          O container é criado com base em uma imagem pré-configurada com as
+          dependências necessárias. Inicialmente foi configurada apenas uma
+          imagem com as dependências JDK do java para desenvolvimento da
+          disciplina de Programação Orientada a Objetos.
+        </p>
+      </div>
+    </section>
+
+    <% include ./parts/footer.ejs %>
+  </body>
+</html>

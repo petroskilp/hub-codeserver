@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+  <% include ./parts/head.ejs %>
+  <body>
+    <% include ./parts/header.ejs %>
+
+    <!-- Banner -->
+    <section id="banner">
+      <div class="inner">
+        <header>
+          <h1>VSCODE online</h1>
+        </header>
+
+        <div class="flex">
+          <div>
+            <span class="icon fa-flask"></span>
+            <h3>Experimental</h3>
+            <p>Atenção!! Mantenha backup/versionamento</p>
+          </div>
+
+          <div>
+            <span class="icon fa-users"></span>
+            <h3>Login</h3>
+            <p>Conta GOOGLE UEPG {RA}@uepg.br</p>
+          </div>
+        </div>
+
+        <footer>
+          <a href="/auth/google" class="button">Login GOOGLE - UEPG</a>
+        </footer>
+      </div>
+    </section>
+
+    <!-- Three -->
+    <section id="three" class="wrapper align-center">
+      <div class="inner">
+        <div class="flex flex-2">
+          <article>
+            <div class="image round">
+              <img src="static/images/github.png" alt="Pic 01" />
+            </div>
+            <header>
+              <h3>
+                Matenha backups<br />
+                e versionamento do seu código
+              </h3>
+            </header>
+            <p>
+              Este aplicativo está em fase experimental<br />O usuário deve
+              mater seus códigos versionados utilizando <br />ferramentas de
+              versionamento e backup.
+            </p>
+            <footer>
+              <a href="https://github.com/" class="button">GITHUB</a>
+            </footer>
+          </article>
+          <article>
+            <div class="image round">
+              <img src="static/images/google.png" alt="Pic 02" />
+            </div>
+            <header>
+              <h3>
+                LOGIN<br />
+                autenticação GOOGLE
+              </h3>
+            </header>
+            <p>
+              Para ter acesso ao aplicativo você deverá autorizar o acesso a sua
+              conta<br />Os dados utilizados são apenas o seu nome e email
+              institucional<br />
+              Apenas são permitidas contas GOOGLE UEPG e autorizadas pelo
+              professor.
+            </p>
+            <footer>
+              <a href="https://gsuite.google.com.br/intl/pt-BR/" class="button"
+                >GSUITE</a
+              >
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+    <% include ./parts/footer.ejs %>
+  </body>
+</html>

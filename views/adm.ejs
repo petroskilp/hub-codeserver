@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+  <% include ./parts/head.ejs %>
+  <body class="subpage">
+    <% include ./parts/header.ejs %>
+
+    <!-- Three -->
+    <section id="three" class="wrapper">
+      <div class="inner">
+        <header class="align-center">
+          <h2>Administração</h2>
+          <p>Gerenciar Usuários</p>
+        </header>
+        <form method="post" action="#">
+          <div class="12u$">
+            <textarea
+              name="ralist"
+              id="ralist"
+              placeholder="Lista de RAS"
+              rows="6"
+            >
+            <%= ralist %>
+          </textarea>
+          <br/>
+            <div class="3u$ 12u$(small)">
+              <input type="submit" value="Salvar" class="fit" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <% include ./parts/footer.ejs %>
+  </body>
+</html>
